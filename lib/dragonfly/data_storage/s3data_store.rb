@@ -33,6 +33,7 @@ module Dragonfly
         self.access_key_id = opts[:access_key_id]
         self.secret_access_key = opts[:secret_access_key]
         self.region = opts[:region]
+        self.url_host = opts[:url_host]
       end
 
       def store(temp_object, opts={})
