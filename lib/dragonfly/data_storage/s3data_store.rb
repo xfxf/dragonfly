@@ -24,7 +24,6 @@ module Dragonfly
         'ap-northeast-1' => 's3-ap-northeast-1.amazonaws.com',
         'ap-southeast-1' => 's3-ap-southeast-1.amazonaws.com',
         'eu-west-1' => 's3-eu-west-1.amazonaws.com',
-        'sa-east-1' => 's3-sa-east-1.amazonaws.com',
         'sa-east-1' => 's3-sa-east-1.amazonaws.com'
       }
 
@@ -34,6 +33,7 @@ module Dragonfly
         self.secret_access_key = opts[:secret_access_key]
         self.region = opts[:region]
         self.url_host = opts[:url_host]
+        self.url_scheme = opts[:url_scheme]
       end
 
       def store(temp_object, opts={})
